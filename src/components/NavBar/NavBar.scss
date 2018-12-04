@@ -17,6 +17,7 @@
 }
 
 .Navigation {
+  height: 100%;
   list-style: none;
   height: $nav-height;
   margin: 0;
@@ -24,8 +25,21 @@
   display: flex;
   align-items: center;
   .Logo {
-    margin-left: 20px;
+    height: 100%;
+    margin-left: 40px;
   	margin-right: auto; /*applied only to the right*/
+    display: flex;
+    align-items: center;
+    a {
+      flex: 0 0 auto;
+      width: auto;
+      height: 70%;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -34,19 +48,17 @@
   line-height:$item-heigth;
   height: $item-heigth;
   padding: $nav-item-padding;
-  border-right: 1px solid white;
+  margin: $nav-item-margin;
     &:hover {
       background-color: white;
+      border-radius: 7px;
         a {
           color: $yellow-teepote;
-          text-decoration: underline;
       }
     }
     &:last-child {
-      //remove bar for last child of li
-      border-right: 0px;
+      margin-right: 20px;
     }
-
   a {
     text-decoration: none;
     color: white;

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './NavBar.scss';
-import Navigation from './vars';
-
+import {NavBarContent} from '../common/TextVars';
+import Logo from './logotype_teepote.png'
 
 
 class NavBar extends Component {
 
 
   render() {
-    const lis = Navigation.map((item) => (
+    const lis = NavBarContent.map((item) => (
       <li className="Nav-Item" key={item.key}>
         <a href={item.href}>{item.label}</a>
       </li>
@@ -17,7 +17,9 @@ class NavBar extends Component {
     return (
       <div className="NavBar">
         <ul className="Navigation">
-          <li className="Logo">LOGO</li>
+          <li className="Logo">
+            <a href="/"><img src = {Logo} alt= "logo teepote miniature" /></a>
+          </li>
           {lis}
         </ul>
       </div>
