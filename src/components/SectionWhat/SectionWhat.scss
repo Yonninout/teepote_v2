@@ -1,0 +1,35 @@
+@import '../common/vars';
+
+.SectionWhat {
+  padding-top: 60px;
+  height: $section-what-height;
+  margin: 0px;
+  display: flex;
+  background-color: $yellow-teepote;
+  // background-image: url('ecran_iphone.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  align-items: center;
+  z-index: 0;
+  overflow: hidden;
+
+  .TextZone, .Phones {
+    flex: 0 0 auto;
+  }
+
+  .Phones {
+    height: 1250px;
+    width: 900px;
+    z-index: 1;
+    margin-right: 0px !important;
+    margin-left: auto;
+    // width: 60vh;
+
+    img {
+      margin-left: 5vw;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

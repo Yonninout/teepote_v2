@@ -10,9 +10,11 @@ class SectionWho extends Component {
       <div className="SectionWho">
         <Phone />
         <TextZone
-          title   = {WhoTitle}
-          content = {WhoContent}
-          legend  = {WhoLegend}
+          color    = 'Yellow'
+          position = "Margin-Section-Who"
+          title    = {WhoTitle}
+          content  = {WhoContent}
+          legend   = {WhoLegend}
         />
       </div>
     );

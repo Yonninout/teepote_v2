@@ -7,8 +7,13 @@
   height: $nav-height;
   width: 100%;
   background-color: $yellow-teepote;
-  z-index: 1;
+  z-index: 100;
   padding: 0;
+
+  -webkit-box-shadow: $nav-shadow;
+  -moz-box-shadow: $nav-shadow;
+  box-shadow: $nav-shadow;
+
 }
 
 .Navigation {

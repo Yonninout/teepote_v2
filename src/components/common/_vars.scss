@@ -7,14 +7,15 @@ $nav-height-hover: 58px;
 $nav-item-padding: 1px 20px 1px 20px;
 $nav-item-padding-hover: 0px 14px 0px 14px;
 $yellow-teepote: #fcc11d;
+$nav-shadow: 0 8px 10px -6px #555;
 
 
 // Phone.scss
-$phone-height: 740px;
-$phone-width: 370px;
+$phone-height: 700px;
+$phone-width: 350px;
 $phone-margin-left: $phone-height * 0.15;
 
-$section-who-height: $phone-height - $nav-height / 2;
+$section-who-height: $phone-height - $nav-height / 1.5;
 $section-who-margin-top: $nav-height / 2;
 
 
@@ -22,3 +23,4 @@ $section-who-margin-top: $nav-height / 2;
 $who-textzone-height: $phone-height / 2;
 $who-textzone-width: $phone-width * 1.5;
 $who-textzone-margin-right: $phone-margin-left * 2;
+$section-what-height: 100vh;

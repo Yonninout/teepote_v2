@@ -1,23 +1,37 @@
 @import '../common/vars';
-.Margin-Auto {
-  margin: auto;
-  margin-right: $phone-margin-left * 2;
+
+.Yellow {
+  .Title-Text, .Content-Text, .Legend-Text {
+    color: $yellow-teepote !important;
+  }
 }
+.White {
+  .Title-Text, .Content-Text, .Legend-Text {
+    color: white !important;
+  }
+}
+
+.Margin-Section-Who {
+  margin: auto;
+  // margin-right: $phone-margin-left * 2;
+}
+
+.Margin-Section-What {
+  margin-left: $phone-margin-left;
+  background-color: #00000050;
+}
+
+
 .TextZone {
   height: $who-textzone-height;
   width: $who-textzone-width;
-
-  .Title-Text, .Content-Text, .Legend-Text {
-    font-family: 'Amatic-Bold';
-    color: $yellow-teepote;
-    // padding: 20px;
-  }
 
   .Content-Text, .Legend-Text {
     font-family: 'OpenSans'
   }
 
   .Title-Text{
+    font-family: 'Amatic-Bold';
     height: 30%;
     text-align: center;
     font-size: 4.5em;
