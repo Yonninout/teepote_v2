@@ -1,0 +1,36 @@
+@import '../common/vars';
+.Margin-Auto {
+  margin: auto;
+  margin-right: $phone-margin-left * 2;
+}
+.TextZone {
+  height: $who-textzone-height;
+  width: $who-textzone-width;
+
+  .Title-Text, .Content-Text, .Legend-Text {
+    font-family: 'Amatic-Bold';
+    color: $yellow-teepote;
+    // padding: 20px;
+  }
+
+  .Content-Text, .Legend-Text {
+    font-family: 'OpenSans'
+  }
+
+  .Title-Text{
+    height: 30%;
+    text-align: center;
+    font-size: 4.5em;
+    // background-color: #000000A0;
+  }
+  .Content-Text{
+    height: 40%;
+    font-size: 1.35em;
+    // background-color: #000000C0;
+  }
+  .Legend-Text{
+    height: 30%;
+    font-size: 1em;
+    // background-color: #00000090;
+  }
+}

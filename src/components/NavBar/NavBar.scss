@@ -1,0 +1,51 @@
+@import '../common/vars';
+
+.NavBar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: $nav-height;
+  width: 100%;
+  background-color: $yellow-teepote;
+  z-index: 1;
+  padding: 0;
+}
+
+.Navigation {
+  list-style: none;
+  height: $nav-height;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  .Logo {
+    margin-left: 20px;
+  	margin-right: auto; /*applied only to the right*/
+  }
+}
+
+.Nav-Item {
+  flex: 0 0 auto;
+  line-height:$item-heigth;
+  height: $item-heigth;
+  padding: $nav-item-padding;
+  border-right: 1px solid white;
+    &:hover {
+      background-color: white;
+        a {
+          color: $yellow-teepote;
+          text-decoration: underline;
+      }
+    }
+    &:last-child {
+      //remove bar for last child of li
+      border-right: 0px;
+    }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    padding: 3px;
+  }
+}
