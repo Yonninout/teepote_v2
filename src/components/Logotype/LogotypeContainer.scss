@@ -1,0 +1,24 @@
+@import '../common/vars';
+
+.LogotypeContainer {
+  height: $logotype-container-height;
+  width: $logotype-container-width;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 2vw 0 2vw; 
+
+
+  &:first-child {
+    margin-left: auto;
+  }
+
+  &:last-child {
+    margin-right: auto;
+  }
+
+  .Logotype, .Footer {
+    flex : 0 0 auto;
+  }
+}

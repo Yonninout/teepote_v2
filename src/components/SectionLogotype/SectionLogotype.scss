@@ -1,0 +1,17 @@
+@import '../common/vars';
+
+.SectionLogotype {
+  // padding-top: 60px;
+  height: $section-who-height;
+  margin: 0px;
+  display: flex;
+  z-index: 2;
+  // background-color: rgba(255,0,255,0.2);
+  // transform-origin: top;
+  transform:translateY($translate-section-logotype);
+
+  .LogotypeContainer {
+    flex: 0 0 auto;
+  }
+
+}

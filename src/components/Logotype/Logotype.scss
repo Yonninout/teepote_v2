@@ -1,0 +1,29 @@
+@import '../common/vars';
+
+.Logotype {
+  // background-color: rgba(0,0,0,0.3);
+  background-color: white;
+  height: $logotype-height;
+  width: $logotype-width;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+
+
+  .Inner-Content {
+    $square: 88%;
+    height: $square;
+    width: $square;
+    margin: auto;
+    // background-color: rgba(255,255,255,0.5);
+    background-color: $yellow-teepote;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

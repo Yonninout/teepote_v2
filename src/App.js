@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar';
 import Title from './components/Title/Title';
 import SectionWho from './components/SectionWho/SectionWho';
 import SectionWhat from './components/SectionWhat/SectionWhat';
+import SectionLogotype from './components/SectionLogotype/SectionLogotype';
 import './App.scss';
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
         <Title/>
         <SectionWho />
         <SectionWhat />
-        {/* <SectionWho /> */}
+        <SectionLogotype />
       </div>
     );
   }

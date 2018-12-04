@@ -1,0 +1,25 @@
+@import '../common/vars';
+
+.Footer {
+  height: $logotype-footer-height;
+  width: $logotype-footer-width;
+  color: $yellow-teepote;
+  text-align: center;
+
+  .FooterTitle {
+    color: $yellow-teepote;
+    height: 25%;
+    font-family: 'Amatic-Bold';
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  .Text {
+    color: $gris-teepote;
+    height: 75%;
+    padding-top: auto;
+    padding-bottom: auto;
+    font-family: 'ComicSans';
+    font-size: 1.05em;
+    // font-weight:;
+  }
+}
