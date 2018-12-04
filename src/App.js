@@ -13,7 +13,7 @@ class App extends Component {
         <Title/>
         <SectionWho />
         <SectionWhat />
-        <SectionWho />
+        {/* <SectionWho /> */}
       </div>
     );
   }

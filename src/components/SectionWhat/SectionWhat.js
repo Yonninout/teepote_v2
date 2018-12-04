@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SectionWhat.scss';
-import {WhoTitle, WhoContent, WhoLegend} from '../common/TextVars'
+import {WhatTitle, WhatContent, WhatLegend} from '../common/TextVars'
 import TextZone from '../TextZone/TextZone'
 import phones from './ecran_iphone.png'
 
@@ -11,9 +11,9 @@ class SectionWhat extends Component {
         <TextZone
           color = "White"
           position = "Margin-Section-What"
-          title   = {WhoTitle}
-          content = {WhoContent}
-          legend  = {WhoLegend}
+          title   = {WhatTitle}
+          content = {WhatContent}
+          legend  = {WhatLegend}
         />
         <div className='Phones'>
           <img src = {phones} alt = "Web design sur écran de smartphones" />
