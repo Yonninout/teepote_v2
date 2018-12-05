@@ -2,7 +2,7 @@
 
 .SectionLogotype {
   // padding-top: 60px;
-  height: $section-who-height;
+  height: $section-logotype-height;
   margin: 0px;
   display: flex;
   z-index: 2;
@@ -13,5 +13,4 @@
   .LogotypeContainer {
     flex: 0 0 auto;
   }
-
 }

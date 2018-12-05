@@ -9,6 +9,7 @@ $nav-item-padding-hover: 0px 14px 0px 14px;
 $yellow-teepote: #fcc11d;
 $gris-teepote: #b9b4cd;
 $nav-shadow: 0 8px 10px -6px #555;
+$projects-shadow: inset 0 -20px 20px -20px #333;
 
 // Phone.scss
 $phone-height: 700px;
@@ -23,6 +24,8 @@ $who-textzone-width: $phone-width * 1.5;
 $who-textzone-margin-right: $phone-margin-left * 2;
 $section-what-height: 100vh;
 
+$section-logotype-height: calc($section-who-height - 10vw);
+
 //Logotype
 $logotype-container-width: 13vw;
 $logotype-container-height: 70vh;
@@ -34,3 +37,8 @@ $logotype-footer-height: calc(70vh - 13vw);
 $logotype-footer-width: 100%;
 
 $translate-section-logotype: $logotype-container-width / -2;
+
+// $computer-presentation-outer-width: computer-presentation-outer-height * 1.61;
+$computer-presentation-outer-width: 70%;
+// $computer-presentation-outer-height: 40%;
+$computer-presentation-padding-top: 62.15%;

@@ -1,0 +1,34 @@
+@import '../../common/vars';
+
+.ComputerPresentation{
+  // height: $computer-presentation-outer-height;
+  //
+  // padding-top: $computer-presentation-padding-top;
+  height: 63%;
+  // width: $computer-presentation-outer-width;
+  width: auto;
+  // background-color: rgba(0,155,80,0.5);
+  margin-right: 20px;
+  margin-left: auto;
+  .Outer-Container {
+    height: 100%;
+    width: auto;
+    // padding-top: $computer-presentation-padding-top;
+    img {
+      height: 100%;
+      width: auto;
+      // padding-top: $computer-presentation-padding-top;
+    }
+    .Inner-Container{
+      height: 100%;
+      // padding-top: $computer-presentation-padding-top;
+      // width: 100%;
+      img {
+        width: 100%;
+        // padding-top: $computer-presentation-padding-top;
+        // height: 100%;
+      }
+    }
+  }
+
+}

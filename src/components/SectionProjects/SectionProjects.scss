@@ -1,0 +1,41 @@
+@import '../common/vars';
+
+.SectionProjects {
+  //apply migration from logotype translation
+  // transform: translateY(-6.5vw);
+  background-color: #fcc11d88;
+  height: 120vh;
+  width: 100%;
+  box-shadow: $projects-shadow;
+
+  background-image: url('./gouache_blanche_3.png'),url('./fond_picto.png');
+  background-position: top, bottom;
+  background-size: 100vw 70vh, contain;
+  background-repeat: no-repeat,no-repeat;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  h1 {
+    flex: 0 0 auto;
+    align-self: flex-start !important;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(255,0,0,0.3);
+    text-align: center;
+    line-height: 1em;
+    height: 1em;
+
+    color: $yellow-teepote;
+    font-family: 'Amatic-Bold';
+    font-size: 5em;
+    font-weight: lighter;
+  }
+  .ComputerPresentation .IphonePresentation {
+    align-self: center !important;
+  }
+
+  .CarrouselleBar {
+    align-self: flex-end !important;
+  }
+}

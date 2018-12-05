@@ -1,0 +1,41 @@
+@import '../../common/vars';
+
+.IphonePresentation{
+  flex: 0 0 auto;
+  height: 50%;
+  width: auto;
+  // background-color: rgba(0,155,80,0.5);
+
+  margin-right: auto;
+  // position: absolute;
+
+  .Outer-Container {
+    height: 100%;
+    width: auto;
+    // position: absolute;
+    background-image: url('./Mockups/iphone_vide.png');
+    background-size: cover;
+    img {
+      position: relative;
+      height: 100%;
+      width: auto;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .Inner-Container{
+      background-image: url('./Mockups/iphone_vide.png');
+      background-size: cover;
+      height: 100%;
+      width: auto;
+      z-index: 2;
+
+      img {
+        // transform: translateY(-101%);
+        top: 0;
+        z-index: 1;
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+}

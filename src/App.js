@@ -4,6 +4,7 @@ import Title from './components/Title/Title';
 import SectionWho from './components/SectionWho/SectionWho';
 import SectionWhat from './components/SectionWhat/SectionWhat';
 import SectionLogotype from './components/SectionLogotype/SectionLogotype';
+import SectionProjects from './components/SectionProjects/SectionProjects';
 import './App.scss';
 
 class App extends Component {
@@ -11,10 +12,11 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <Title/>
+        <Title />
         <SectionWho />
         <SectionWhat />
         <SectionLogotype />
+        <SectionProjects />
       </div>
     );
   }
