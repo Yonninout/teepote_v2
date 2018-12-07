@@ -8,7 +8,7 @@ class SectionProjects extends Component {
   render() {
     return (
       <div className="SectionProjects">
-        <h1>Nos réalisations</h1>
+        <h1>Nos realisations</h1>
         <ComputerPresentation />
         <IphonePresentation />
         <CarrouselleBar />
