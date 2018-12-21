@@ -1,0 +1,27 @@
+@import '../common/vars';
+
+.SectionWhatMobile {
+    // background-color: rgba(255,0,0,0.2);
+    background-image: url('./fond_what_we_do.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: bottom;
+    font-family: 'Amatic-Bold';
+    color: $bleu-teepote;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-bottom: 45%;
+    // margin: $margin-mobile;
+    margin-top: 100px;
+    h1 {
+      width: 100%;
+      font-size: 8em;
+      text-align: center;
+    }
+    // left elements
+
+
+}

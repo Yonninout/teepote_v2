@@ -1,0 +1,23 @@
+@import '../common/vars';
+
+.LogotypeMobile {
+  height: auto;
+  width: 100%;
+  background-color: $yellow-teepote;
+  border-radius: 50%;
+  .Inner-Content {
+    background-color: white;
+    border-radius: 50%;
+    height: auto;
+    width: 96%;
+    margin: 2%;
+    overflow: hidden;
+    img {
+      height: auto;
+      width: 100%;
+      margin-bottom: 1%
+      // padding: 1%;
+
+    }
+  }
+}

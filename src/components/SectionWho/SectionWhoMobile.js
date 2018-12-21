@@ -7,7 +7,7 @@ import Phone from '../Phone/Phone'
 class SectionWhoMobile extends Component {
   render() {
     return (
-      <div className="SectionWhoMobile" style={{}}>
+      <div className="SectionWhoMobile" onClick={this.props.onClick}>
         <TextZoneMobile
           color    = '#1b8d8c'
           title    = {WhoTitle}
