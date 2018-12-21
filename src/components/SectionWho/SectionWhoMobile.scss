@@ -1,0 +1,17 @@
+@import '../common/vars';
+
+.SectionWhoMobile {
+  // padding-top: 60px;
+  height: auto;
+  margin: 0px;
+  margin-left: 14%;
+  margin-right: 14%;
+  display: flex;
+  z-index: 2;
+  // background-color: rgba(255,0,255,0.2);
+
+  .TextZone, .Phone {
+    flex: 0 0 auto;
+    align-items: center;
+  }
+}

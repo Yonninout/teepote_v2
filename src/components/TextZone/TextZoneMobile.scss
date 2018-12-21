@@ -1,0 +1,35 @@
+@import '../common/vars';
+
+.TextZoneMobile {
+  height: auto;
+  width: 100%;
+  // background-color: rgba(100,0,0,0.5);
+
+  .Content-Text, .Legend-Text {
+    font-family: 'OpenSans'
+  }
+
+  .Title-Text{
+    // background-color: rgba(100,100,0,0.5);
+    font-family: 'Amatic-Bold';
+    height: auto;
+    text-align: center;
+    font-size: 8em;
+    // background-color: #000000A0;
+  }
+  .Content-Text{
+    height: auto;
+    font-size: 3.2em;
+    text-align: center;
+    // background-color: #000000C0;
+  }
+  .Legend-Text{
+    height: auto;
+    font-size: 2em;
+    text-align: center;
+    // background-color: #00000090;
+  }
+  .Title-Text, .Content-Text, .Legend-Text {
+    margin-bottom: 10px;
+  }
+}
