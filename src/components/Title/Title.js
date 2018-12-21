@@ -4,7 +4,7 @@ import './Title.scss';
 class Title extends Component {
   render() {
     return (
-      <div className="Title">
+      <div className="Title" >
 
       </div>
     );

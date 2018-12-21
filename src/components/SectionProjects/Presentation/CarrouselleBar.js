@@ -5,7 +5,7 @@ class CarrouselleBar extends Component {
   render() {
     return (
       <div className="CarrouselleBar">
-        carrourou
+
       </div>
     );
   }

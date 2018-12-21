@@ -17,11 +17,13 @@
 .App {
   height: 2000px;
   margin: 0px;
+  background-color: white;
 }
 body{
   width: 100%;
   max-width:100%;  /* added */
   margin: 0px;
   overflow-y: visible;
+
   /* overflow-x: hidden; */
 }

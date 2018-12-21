@@ -1,6 +1,9 @@
 @import '../common/vars';
+body {
+  overflow: hidden;
+}
 
-.NavBar {
+.NavBarMobile {
   position: fixed;
   left: 0;
   top: 0;
@@ -22,9 +25,28 @@
     padding: 0;
     display: flex;
     align-items: center;
+    .MenuIcon {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      div {
+        height: 30px;
+        width: 30px;
+        margin: auto;
+        svg {
+          color: white;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
     .Logo {
       height: 100%;
-      margin-left: 40px;
+      width: auto;
+      margin-left: auto;
     	margin-right: auto; /*applied only to the right*/
       display: flex;
       align-items: center;
@@ -35,32 +57,17 @@
 
         img {
           height: 100%;
-          width: 100%;
+          width: auto;
         }
-      }
-    }
-    .Nav-Item {
-      flex: 0 0 auto;
-      line-height:$item-heigth;
-      height: $item-heigth;
-      padding: $nav-item-padding;
-      margin: $nav-item-margin;
-        &:hover {
-          background-color: white;
-          border-radius: 7px;
-            a {
-              color: $yellow-teepote;
-          }
-        }
-        &:last-child {
-          margin-right: 20px;
-        }
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.3em;
-        padding: 3px;
       }
     }
   }
+  #exitMenu {
+    animation: fadeIn ease 5s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

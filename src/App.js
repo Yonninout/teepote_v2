@@ -1,14 +1,60 @@
 import React, { Component } from 'react';
 import NavBar from './components/NavBar/NavBar';
+import NavBarMobile from './components/NavBar/NavBarMobile';
 import Title from './components/Title/Title';
+import TitleMobile from './components/Title/TitleMobile';
 import SectionWho from './components/SectionWho/SectionWho';
 import SectionWhat from './components/SectionWhat/SectionWhat';
 import SectionLogotype from './components/SectionLogotype/SectionLogotype';
 import SectionProjects from './components/SectionProjects/SectionProjects';
+
 import './App.scss';
+import {isMobile} from 'react-device-detect';
+
 
 class App extends Component {
-  render() {
+  constructor(props){
+    super(props);
+    this.state ={
+      menu:false,
+      classMenu: ''
+    }
+    this.removeMenu = this.removeMenu.bind(this);
+    this.showMenu = this.showMenu.bind(this);
+  }
+
+
+  removeMenu = () => {
+    this.setState({
+      classMenu: ' Out',
+    })
+    setTimeout(() => {
+      this.setState({
+        menu:false,
+        classMenu: '',}
+      )},500)
+    console.log('ooooo')
+  }
+  showMenu = () => {
+    this.setState({
+      menu:true,
+      classMenu: ' In',
+    })
+    console.log('yoyoyoyo')
+  }
+  renderContent = () => {
+    if (isMobile) {
+      return (
+      <div className="App" >
+        <NavBarMobile
+          show= {this.showMenu}
+          remove = {this.removeMenu}
+          menu={this.state.menu}
+          classMenu={this.state.classMenu}
+        />
+        <TitleMobile onClick={this.removeMenu}/>
+      </div>)
+    }
     return (
       <div className="App">
         <NavBar />
@@ -20,6 +66,9 @@ class App extends Component {
       </div>
     );
   }
-}
 
+  render() {
+    return this.renderContent();
+  }
+}
 export default App;

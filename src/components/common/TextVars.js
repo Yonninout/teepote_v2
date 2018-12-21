@@ -38,7 +38,7 @@ const LogotypeContent = [
 
 const NavBarContent = [
   {
-    label:'Lorem',
+    label:'Loredm',
     href : '#a',
     key: 0
   },
