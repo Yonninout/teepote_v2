@@ -4,7 +4,9 @@ import NavBarMobile from './components/NavBar/NavBarMobile';
 import Title from './components/Title/Title';
 import TitleMobile from './components/Title/TitleMobile';
 import SectionWho from './components/SectionWho/SectionWho';
+import SectionWhoMobile from './components/SectionWho/SectionWhoMobile';
 import SectionWhat from './components/SectionWhat/SectionWhat';
+import SectionWhatMobile from './components/SectionWhat/SectionWhatMobile';
 import SectionLogotype from './components/SectionLogotype/SectionLogotype';
 import SectionProjects from './components/SectionProjects/SectionProjects';
 
@@ -53,6 +55,8 @@ class App extends Component {
           classMenu={this.state.classMenu}
         />
         <TitleMobile onClick={this.removeMenu}/>
+        <SectionWhoMobile onClick={this.removeMenu}/>
+        <SectionWhatMobile onClick={this.removeMenu}/>
       </div>)
     }
     return (
