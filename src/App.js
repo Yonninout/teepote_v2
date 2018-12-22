@@ -9,6 +9,7 @@ import SectionWhat from './components/SectionWhat/SectionWhat';
 import SectionWhatMobile from './components/SectionWhat/SectionWhatMobile';
 import SectionLogotype from './components/SectionLogotype/SectionLogotype';
 import SectionProjects from './components/SectionProjects/SectionProjects';
+import ContactMobile from './components/ContactMobile/ContactMobile.js';
 
 import './App.scss';
 import {isMobile} from 'react-device-detect';
@@ -57,6 +58,7 @@ class App extends Component {
         <TitleMobile onClick={this.removeMenu}/>
         <SectionWhoMobile onClick={this.removeMenu}/>
         <SectionWhatMobile onClick={this.removeMenu}/>
+        <ContactMobile onClick={this.removeMenu}/>
       </div>)
     }
     return (
