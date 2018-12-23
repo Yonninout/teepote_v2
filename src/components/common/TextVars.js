@@ -1,6 +1,6 @@
 const WhoTitle = 'Qui sommes nous ?';
-const WhoContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inrin laoreet metus, id pulvinar erat. Morbi dignissim nibh sollicitudin magna iaculis, et eleifend turpis porttitor.';
-const WhoLegend = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inrin laoreet metus, id pulvinar erat.';
+const WhoContent = 'Teepote vous accompagne dans la création de votre site internet';
+const WhoLegend = 'Présentez nous l\'activité de votre entreprise et nous la mettrons en valeur !' ;
 const WhatTitle = 'Notre activité';
 const WhatContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inrin laoreet metus, id pulvinar erat. Morbi dignissim nibh sollicitudin.';
 const WhatLegend = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';

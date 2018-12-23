@@ -23,30 +23,30 @@ class ContactMobile extends Component {
 
 handleSubmit(event) {
   console.log(this.state);
-   event.preventDefault();
+   // event.preventDefault();
+   //
+   // const {lastName,firstName,society,email,phoneNumber,object,message} = this.state;
+   // fetch('https://formspree.io/yonni.tabeling@teepote.com', {
+   //     method: 'POST',
+   //     // headers : new Headers(),
+   //     body:JSON.stringify(
+   //       { lastName: {lastName},
+   //         firstName: {firstName},
+   //         society: {society},
+   //         email: {email},
+   //         phoneNumber: {phoneNumber},
+   //         object: {object},
+   //         message: {message},
+   //       }
+   //     )
+   // }).then((res) => {
+   //
+   //   console.log(res);
+   // })
+   // .then((data) =>  console.log(data))
+   // .catch((err)=>console.log(err))
 
-   const {lastName,firstName,society,email,phoneNumber,object,message} = this.state;
-   fetch('https://formspree.io/yonni.tabeling@teepote.com', {
-       method: 'POST',
-       // headers : new Headers(),
-       body:JSON.stringify(
-         { lastName: {lastName},
-           firstName: {firstName},
-           society: {society},
-           email: {email},
-           phoneNumber: {phoneNumber},
-           object: {object},
-           message: {message},
-         }
-       )
-   }).then((res) => {
-     
-     console.log(res);
-   })
-   .then((data) =>  console.log(data))
-   .catch((err)=>console.log(err))
-
-   return false;
+   // return false;
 }
 
 postData(event){
@@ -80,7 +80,10 @@ render() {
           <div className="Contact">CV : 07 82 69 56 79</div>
           <div className="Contact">YT : 06 14 72 20 83</div>
         </div>
-        <form onSubmit={this.handleSubmit}>
+        <form
+          // onSubmit={this.handleSubmit}
+            action="https://formspree.io/yonni.tabeling@teepote.com"
+            method="POST">
           <label>
             Nom * :
             <input
@@ -142,6 +145,11 @@ render() {
 
           <input type="submit" value="Envoyer"/>
         </form>
+        <div className="FooterContact">
+          <div className="Url">www.<span>teepote</span>.com</div>
+          <div className="Line">Tous droits réservés - Mentions légales</div>
+          <div className="Line">Retrouvez nous sur Facebook, Instagram et Malt</div>
+        </div>
       </div>
     );
   }

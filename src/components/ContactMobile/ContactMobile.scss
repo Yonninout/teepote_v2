@@ -79,11 +79,32 @@
       font-size: 2.5em;
       color: white;
       background-color: $bleu-teepote;
-      margin-bottom: 5px;
-      margin-top: 5px;
-      line-height: 2.3em;
+      margin-bottom: 3px;
+      margin-top: 3px;
+      line-height: 2em;
     }
   }
+  .FooterContact {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: $bleu-teepote;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .Url{
+      margin-top: 5%;
+      margin-bottom: 1%;
+      font-size: 2.5em;
+      span {
+        font-weight: bold;
+      }
+    }
+    .Line{
+      font-size: 1.6em;
+    }
+  }
+
 }
 
 input:-webkit-autofill,
