@@ -6,7 +6,7 @@ import Logo from './logotype_teepote.png'
 import { library } from '@fontawesome/fontawesome-svg-core'
 import { faBars, faTimes } from '@fontawesome/free-solid-svg-icons'
 import LeftMenu from './LeftMenu';
-import { FontAwesomeIcon } from '@fo,tawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fontawesome/react-fontawesome'
 
 library.add(faBars, faTimes);
 
