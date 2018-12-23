@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import './NavBarMobile.scss';
 import {NavBarContent} from '../common/TextVars';
 import Logo from './logotype_teepote.png'
-import { library } from '@fontawesome/fontawesome-svg-core'
-import { faBars, faTimes } from '@fontawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import LeftMenu from './LeftMenu';
-import { FontAwesomeIcon } from '@fontawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 library.add(faBars, faTimes);
 
