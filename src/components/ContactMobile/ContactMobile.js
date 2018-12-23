@@ -4,7 +4,8 @@ import './ContactMobile.scss';
 const AWS = require('aws-sdk');
 // Set the region
 AWS.config.update({region: 'eu-west-1'});
-
+var credentials = new AWS.SharedIniFileCredentials({profile: 'default'});
+AWS.config.credentials = credentials;
 // Create sendEmail params
 var params = {
   Destination: { /* required */
