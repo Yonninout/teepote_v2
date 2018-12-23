@@ -1,56 +1,6 @@
 import React, { Component } from 'react';
 import './ContactMobile.scss';
 
-const AWS = require('aws-sdk');
-// Set the region
-AWS.config.update({region: 'eu-west-1'});
-var credentials = new AWS.SharedIniFileCredentials({profile: 'default'});
-AWS.config.credentials = credentials;
-// Create sendEmail params
-var params = {
-  Destination: { /* required */
-    CcAddresses: [
-      'yonni.tabeling@teepote.com',
-      /* more items */
-    ],
-    ToAddresses: [
-      'yonni.tabeling@teepote.com',
-      /* more items */
-    ]
-  },
-  Message: { /* required */
-    Body: { /* required */
-      Html: {
-       Charset: "UTF-8",
-       Data: "HTML_FORMAT_BODY"
-      },
-      Text: {
-       Charset: "UTF-8",
-       Data: "TEXT_FORMAT_BODY"
-      }
-     },
-     Subject: {
-      Charset: 'UTF-8',
-      Data: 'Test email'
-     }
-    },
-  Source: 'SENDER_EMAIL_ADDRESS', /* required */
-  ReplyToAddresses: [
-      'yonni.tabeling@teepote.com',
-    /* more items */
-  ],
-};
-
-var sendPromise = new AWS.SES({apiVersion: '2010-12-01'}).sendEmail(params).promise();
-
-// Handle promise's fulfilled/rejected state
-sendPromise.then(
-  function(data) {
-    console.log(data.MessageId);
-  }).catch(
-    function(err) {
-    console.error(err, err.stack);
-  });
 
 
 class ContactMobile extends Component {
@@ -74,8 +24,38 @@ class ContactMobile extends Component {
 handleSubmit(event) {
   console.log(this.state);
    event.preventDefault();
+
+   const {lastName,firstName,society,email,phoneNumber,object,message} = this.state;
+   fetch('https://formspree.io/yonni.tabeling@teepote.com', {
+       method: 'POST',
+       // headers : new Headers(),
+       body:JSON.stringify(
+         { lastName: {lastName},
+           firstName: {firstName},
+           society: {society},
+           email: {email},
+           phoneNumber: {phoneNumber},
+           object: {object},
+           message: {message},
+         }
+       )
+   }).then((res) => {
+     
+     console.log(res);
+   })
+   .then((data) =>  console.log(data))
+   .catch((err)=>console.log(err))
+
    return false;
 }
+
+postData(event){
+    event.preventDefault();
+
+
+
+}
+
 
 handleInputChange(event) {
   const target = event.target;
